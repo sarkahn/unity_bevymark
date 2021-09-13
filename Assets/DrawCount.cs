@@ -14,6 +14,8 @@ public class DrawCount : MonoBehaviour
 
     private void OnGUI()
     {
-        GUILayout.Label($"Bird count: {_query.CalculateEntityCount()}");
+        // Button so it has a background
+        GUI.backgroundColor = Color.black;
+        GUILayout.Button($"Bird count: {_query.CalculateEntityCount()}");
     }
 }

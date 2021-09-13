@@ -35,9 +35,10 @@ public class SpawnerSystem : SystemBase
                         Velocity = new float2(rand.NextFloat(5f, 15f))
                     });
 
+                    float x = (float)i * 0.001f;
                     ecb.SetComponent(e, new Translation
                     {
-                        Value = new float3(0, 2.5f, (float)i * 0.001f)
+                        Value = new float3(x, 2.5f, (float)i * 0.001f)
                     });
 
                 }
